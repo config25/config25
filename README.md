@@ -40,13 +40,13 @@
 * 🌱 구름톤 유니브 4기 백엔드
 * 🏢 (주)퀀텀에듀솔루션 현장실습 (2025.09 ~ 2026.02)
 
-
 ## 🚀 Projects
 
-### 💬 드르륵 (AI 메신저)
-> SNS + AI 기반 실시간 채팅 서비스 (iOS 출시)
+<details>
+<summary>💬 드르륵 (AI 메신저) — SNS + AI 기반 실시간 채팅 서비스</summary>
 
 - **Tech**: Kotlin, Spring Boot, WebSocket, MongoDB, MySQL  
+
 - **Focus**
   - 실시간 채팅 아키텍처 설계  
   - 정형 + 비정형 DB 구조 설계  
@@ -55,11 +55,13 @@
 🔗 [GitHub](https://github.com/Chewing-Chat)  
 🔗 [API Docs](https://drr.kro.kr/docs/index.html)
 
+</details>
 
-### 🌱 FutureFinder
-> 청년 맞춤형 금융·진로 통합 플랫폼
+<details>
+<summary>🌱 FutureFinder — 청년 맞춤형 금융·진로 통합 플랫폼</summary>
 
 - **Tech**: Spring Boot, JWT, AWS, OpenAI  
+
 - **Focus**
   - Facade 기반 도메인 통합  
   - 외부 API 데이터 처리  
@@ -67,20 +69,24 @@
 
 🔗 [GitHub](https://github.com/9oormthon-univ/2025_SEASONTHON_TEAM_85_BE)
 
+</details>
 
-### 🧹 RoomGenie
-> AI 이미지 기반 방 정리 서비스
+<details>
+<summary>🧹 RoomGenie — AI 이미지 기반 방 정리 서비스</summary>
 
 - **Tech**: Spring Boot, Coroutine, S3, OpenAI  
+
 - **Focus**
   - DIP 기반 구조 설계  
   - 비동기 처리 최적화  
 
+</details>
 
-### 🎨 Impact Design Canvas
-> AI 기반 성과 설계 교육 플랫폼
+<details>
+<summary>🎨 Impact Design Canvas — AI 기반 성과 설계 교육 플랫폼</summary>
 
 - **Tech**: Spring Boot, MariaDB, CQRS  
+
 - **Focus**
   - CQRS 구조 설계  
   - 역할 기반 인증  
@@ -88,3 +94,4 @@
 🔗 [GitHub](https://github.com/config25/Impact-design-back)  
 🔗 [API Docs](http://iptdesign.mycafe24.com/docs/index.html)
 
+</details>
