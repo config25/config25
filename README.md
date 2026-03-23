@@ -4,6 +4,32 @@
   <b>문제 해결을 즐기고, 협업을 통해 성장하는 백엔드 개발자입니다.</b> 
 </p>
 
+
+## 📊 Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=config25&show_icons=true" height="150"/>
+  <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yhkim0525" height="150"/>
+</p>
+
+
+## 🧰 Tech Stack
+
+<p>
+<img src="https://img.shields.io/badge/Java-17-orange?style=flat-square"/>
+<img src="https://img.shields.io/badge/Kotlin-purple?style=flat-square"/>
+<img src="https://img.shields.io/badge/Spring Boot-green?style=flat-square"/>
+<img src="https://img.shields.io/badge/Spring Security-brightgreen?style=flat-square"/>
+<img src="https://img.shields.io/badge/JPA-blue?style=flat-square"/>
+<br>
+<img src="https://img.shields.io/badge/MySQL-blue?style=flat-square"/>
+<img src="https://img.shields.io/badge/MongoDB-green?style=flat-square"/>
+<br>
+<img src="https://img.shields.io/badge/AWS-orange?style=flat-square"/>
+<img src="https://img.shields.io/badge/Docker-blue?style=flat-square"/>
+<img src="https://img.shields.io/badge/GitHub Actions-black?style=flat-square"/>
+</p>
+
 ## 🏆 Achievements 
 
 * 🥇 2023 전국 대학생 SW창업 아이디어톤 **결선 진출**
@@ -62,29 +88,3 @@
 🔗 [GitHub](https://github.com/config25/Impact-design-back)  
 🔗 [API Docs](http://iptdesign.mycafe24.com/docs/index.html)
 
-
-
-## 📊 Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=config25&show_icons=true" height="150"/>
-  <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yhkim0525" height="150"/>
-</p>
-
-
-## 🧰 Tech Stack
-
-<p>
-<img src="https://img.shields.io/badge/Java-17-orange?style=flat-square"/>
-<img src="https://img.shields.io/badge/Kotlin-purple?style=flat-square"/>
-<img src="https://img.shields.io/badge/Spring Boot-green?style=flat-square"/>
-<img src="https://img.shields.io/badge/Spring Security-brightgreen?style=flat-square"/>
-<img src="https://img.shields.io/badge/JPA-blue?style=flat-square"/>
-<br>
-<img src="https://img.shields.io/badge/MySQL-blue?style=flat-square"/>
-<img src="https://img.shields.io/badge/MongoDB-green?style=flat-square"/>
-<br>
-<img src="https://img.shields.io/badge/AWS-orange?style=flat-square"/>
-<img src="https://img.shields.io/badge/Docker-blue?style=flat-square"/>
-<img src="https://img.shields.io/badge/GitHub Actions-black?style=flat-square"/>
-</p>
