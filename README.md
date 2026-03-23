@@ -1,11 +1,3 @@
-# Baekjoon Online Judge
-<div align="center">
-    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yhkim0525" width=40% />
-</div>
-
-
----
-
 # 김영호 | Backend Developer
 
 <p align="center">
