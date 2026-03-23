@@ -10,7 +10,6 @@
   <a href="https://velog.io/@yhkim0525/posts">Blog</a>
 </p>
 
----
 
 ## 📊 Stats
 
@@ -19,7 +18,6 @@
   <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yhkim0525" height="150"/>
 </p>
 
----
 
 ## 📢 About Me
 
@@ -27,7 +25,6 @@
 * 협업 속에서 성장하는 개발자
 * **확장 가능한 설계 / 유지보수성** 중심 개발
 
----
 
 ## 🧰 Tech Stack
 
