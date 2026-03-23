@@ -18,13 +18,6 @@
 * 서비스 전체 흐름을 이해하고 **확장 가능한 구조 설계**에 관심이 많습니다.
 
 ---
-
-## 💡 한 줄 소개
-
-> **지속적인 도전과 협업 속에서 효율적인 방법을 고민하며 성장하는 백엔드 개발자입니다.**
-
----
-
 ## 🎓 Education & Activities
 
 * 한양대학교 ICT융합학부 (2020.03 ~ )
@@ -106,12 +99,6 @@
 * OpenAI API (이미지 분석)
 * Kotlin Coroutine 비동기 처리
 
-### 💡 핵심 경험
-
-* **DIP 기반 아키텍처 설계**
-* **Reader / Appender 구조로 도메인 분리**
-* **AI 요청 비동기 처리 최적화**
-
 ---
 
 ## 🌱 FutureFinder (청년 커리어 플랫폼)
@@ -126,12 +113,6 @@
 * AWS (RDS, S3)
 * 외부 API (카카오, 네이버 뉴스, 공공데이터)
 * OpenAI 기반 추천 시스템
-
-### 💡 핵심 경험
-
-* **Facade 패턴을 활용한 도메인 통합**
-* **외부 API 데이터 수집 및 가공**
-* **사용자 맞춤 추천 시스템 설계**
 
 ---
 
@@ -148,36 +129,6 @@
 * CQRS 패턴 적용
 * OpenAI 기반 리포트 생성
 
-### 💡 핵심 경험
-
-* **CQRS 기반 구조 설계**
-* **역할 기반 인증 시스템 구현**
-* **AI 리포트 자동 생성 기능 개발**
-
 ---
-
-# 🏗 Architecture Philosophy
-
-```text
-API → Domain → Storage → External
-```
-
-
-
----
-
-# 📈 What I Focus On
-
-* 단순 CRUD를 넘어 **서비스 구조 설계**
-* 트래픽/데이터 특성에 맞는 **DB 선택**
-* AI + Backend 결합 서비스 경험
-* 협업 기반 개발 (Git, API 문서화)
-
----
-
-# ✍️ Blog
-
-👉 [https://velog.io/@yhkim0525/posts](https://velog.io/@yhkim0525/posts)
-
 
 
