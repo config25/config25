@@ -10,16 +10,14 @@
   <a href="https://velog.io/@yhkim0525/posts">Blog</a>
 </p>
 
----
 
 ## 📊 Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=wantcodingwell&show_icons=true" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=config25&show_icons=true" height="150"/>
   <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yhkim0525" height="150"/>
 </p>
 
----
 
 ## 📢 About Me
 
@@ -27,7 +25,6 @@
 * 협업 속에서 성장하는 개발자
 * **확장 가능한 설계 / 유지보수성 중심 개발**
 
----
 
 ## 🧰 Tech Stack
 
@@ -46,11 +43,11 @@
 <img src="https://img.shields.io/badge/GitHub Actions-black?style=flat-square"/>
 </p>
 
----
+
 
 # 🚀 Projects
 
----
+
 
 ## 💬 드르륵 (AI 메신저)
 
@@ -68,7 +65,7 @@
 * GitHub: [https://github.com/Chewing-Chat](https://github.com/Chewing-Chat)
 * API Docs: [https://drr.kro.kr/docs/index.html](https://drr.kro.kr/docs/index.html)
 
----
+
 
 ## 🌱 FutureFinder
 
@@ -85,7 +82,6 @@
 
 * GitHub: [https://github.com/9oormthon-univ/2025_SEASONTHON_TEAM_85_BE](https://github.com/9oormthon-univ/2025_SEASONTHON_TEAM_85_BE)
 
----
 
 ## 🧹 RoomGenie
 
@@ -97,7 +93,6 @@
   * DIP 기반 구조 설계
   * 비동기 처리 최적화
 
----
 
 ## 🎨 Impact Design Canvas
 
