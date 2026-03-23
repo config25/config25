@@ -1,9 +1,3 @@
-# 김영호 | Backend Developer
-
-<p align="center">
-  <b>문제 해결과 구조 설계를 즐기는 백엔드 개발자</b><br>
-</p>
-
 <p align="center">
   📧 yhkim052556@gmail.com &nbsp; | &nbsp;
   <a href="https://github.com/wantcodingwell">GitHub</a> &nbsp; | &nbsp;
@@ -17,13 +11,6 @@
   <img src="https://github-readme-stats.vercel.app/api?username=config25&show_icons=true" height="150"/>
   <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yhkim0525" height="150"/>
 </p>
-
-
-## 📢 About Me
-
-* 구조를 고민하는 백엔드 개발자
-* 협업 속에서 성장하는 개발자
-* **확장 가능한 설계 / 유지보수성 중심 개발**
 
 
 ## 🧰 Tech Stack
@@ -108,8 +95,3 @@
 
 * GitHub: [https://github.com/config25/Impact-design-back](https://github.com/config25/Impact-design-back)
 * API Docs: [http://iptdesign.mycafe24.com/docs/index.html](http://iptdesign.mycafe24.com/docs/index.html)
-
-
-
-
-까지 같이 만들어줄게 😎
