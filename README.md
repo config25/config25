@@ -78,7 +78,9 @@
 
 - **Focus**
   - DIP 기반 구조 설계  
-  - 비동기 처리 최적화  
+  - 비동기 처리 최적화
+ 
+🔗 .[GitHub](https://github.com/9ITHON/9-RoomGenie-BE/tree/ci/1).
 
 </details>
 
