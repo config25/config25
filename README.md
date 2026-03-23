@@ -8,7 +8,7 @@
 ## 📊 Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=config25&show_icons=true" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=config25&show_icons=true&cache_seconds=60" height="150"/>
   <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yhkim0525" height="150"/>
 </p>
 
@@ -31,67 +31,61 @@
 </p>
 
 
-
-# 🚀 Projects
-
+## 🚀 Projects
 
 
-## 💬 드르륵 (AI 메신저)
+### 💬 드르륵 (AI 메신저)
 
 > SNS + AI 기반 실시간 채팅 서비스 (iOS 출시)
 
-* **Tech**: Kotlin, Spring Boot, WebSocket, MongoDB, MySQL
-* **Focus**
+- **Tech**: Kotlin, Spring Boot, WebSocket, MongoDB, MySQL  
+- **Focus**
+  - 실시간 채팅 아키텍처 설계  
+  - 정형 + 비정형 DB 구조 설계  
+  - 멀티모듈 기반 서버 구조  
 
-  * 실시간 채팅 아키텍처 설계
-  * 정형 + 비정형 DB 구조 설계
-  * 멀티모듈 기반 서버 구조
-
-### 🔗 Links
-
-* GitHub: [https://github.com/Chewing-Chat](https://github.com/Chewing-Chat)
-* API Docs: [https://drr.kro.kr/docs/index.html](https://drr.kro.kr/docs/index.html)
+🔗 **Links**
+- GitHub: https://github.com/Chewing-Chat  
+- API Docs: https://drr.kro.kr/docs/index.html  
 
 
-
-## 🌱 FutureFinder
+### 🌱 FutureFinder
 
 > 청년 맞춤형 금융·진로 통합 플랫폼
 
-* **Tech**: Spring Boot, JWT, AWS, OpenAI
-* **Focus**
+- **Tech**: Spring Boot, JWT, AWS, OpenAI  
+- **Focus**
+  - Facade 기반 도메인 통합  
+  - 외부 API 데이터 처리  
+  - 추천 시스템 설계  
 
-  * Facade 기반 도메인 통합
-  * 외부 API 데이터 처리
-  * 추천 시스템 설계
-
-### 🔗 Links
-
-* GitHub: [https://github.com/9oormthon-univ/2025_SEASONTHON_TEAM_85_BE](https://github.com/9oormthon-univ/2025_SEASONTHON_TEAM_85_BE)
+🔗 **Links**
+- GitHub: https://github.com/9oormthon-univ/2025_SEASONTHON_TEAM_85_BE  
 
 
-## 🧹 RoomGenie
+
+
+### 🧹 RoomGenie
 
 > AI 이미지 기반 방 정리 서비스
 
-* **Tech**: Spring Boot, Coroutine, S3, OpenAI
-* **Focus**
+- **Tech**: Spring Boot, Coroutine, S3, OpenAI  
+- **Focus**
+  - DIP 기반 구조 설계  
+  - 비동기 처리 최적화  
 
-  * DIP 기반 구조 설계
-  * 비동기 처리 최적화
 
 
-## 🎨 Impact Design Canvas
+
+### 🎨 Impact Design Canvas
 
 > AI 기반 성과 설계 교육 플랫폼
 
-* **Tech**: Spring Boot, MariaDB, CQRS
-* **Focus**
+- **Tech**: Spring Boot, MariaDB, CQRS  
+- **Focus**
+  - CQRS 구조 설계  
+  - 역할 기반 인증  
 
-  * CQRS 구조 설계
-  * 역할 기반 인증
-
-### 🔗 Links
-
-* GitHub: [https://github.com/config25/Impact-design-back](https://github.com/config25/Impact-design-back)
-* API Docs: [http://iptdesign.mycafe24.com/docs/index.html](http://iptdesign.mycafe24.com/docs/index.html)
+🔗 **Links**
+- GitHub: https://github.com/config25/Impact-design-back  
+- API Docs: http://iptdesign.mycafe24.com/docs/index.html  
