@@ -10,6 +10,7 @@
   <a href="https://velog.io/@yhkim0525/posts">Blog</a>
 </p>
 
+---
 
 ## 📊 Stats
 
@@ -18,18 +19,19 @@
   <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yhkim0525" height="150"/>
 </p>
 
+---
 
 ## 📢 About Me
 
 * 구조를 고민하는 백엔드 개발자
 * 협업 속에서 성장하는 개발자
-* **확장 가능한 설계 / 유지보수성** 중심 개발
+* **확장 가능한 설계 / 유지보수성 중심 개발**
 
+---
 
 ## 🧰 Tech Stack
 
 <p>
-
 <img src="https://img.shields.io/badge/Java-17-orange?style=flat-square"/>
 <img src="https://img.shields.io/badge/Kotlin-purple?style=flat-square"/>
 <img src="https://img.shields.io/badge/Spring Boot-green?style=flat-square"/>
@@ -42,12 +44,13 @@
 <img src="https://img.shields.io/badge/AWS-orange?style=flat-square"/>
 <img src="https://img.shields.io/badge/Docker-blue?style=flat-square"/>
 <img src="https://img.shields.io/badge/GitHub Actions-black?style=flat-square"/>
-
 </p>
 
 ---
 
 # 🚀 Projects
+
+---
 
 ## 💬 드르륵 (AI 메신저)
 
@@ -60,8 +63,11 @@
   * 정형 + 비정형 DB 구조 설계
   * 멀티모듈 기반 서버 구조
 
-🔗 [https://github.com/Chewing-Chat](https://github.com/Chewing-Chat)
-API Docs: https://drr.kro.kr/docs/index.html
+### 🔗 Links
+
+* GitHub: [https://github.com/Chewing-Chat](https://github.com/Chewing-Chat)
+* API Docs: [https://drr.kro.kr/docs/index.html](https://drr.kro.kr/docs/index.html)
+
 ---
 
 ## 🌱 FutureFinder
@@ -75,7 +81,9 @@ API Docs: https://drr.kro.kr/docs/index.html
   * 외부 API 데이터 처리
   * 추천 시스템 설계
 
-🔗 [https://github.com/9oormthon-univ/2025_SEASONTHON_TEAM_85_BE](https://github.com/9oormthon-univ/2025_SEASONTHON_TEAM_85_BE)
+### 🔗 Links
+
+* GitHub: [https://github.com/9oormthon-univ/2025_SEASONTHON_TEAM_85_BE](https://github.com/9oormthon-univ/2025_SEASONTHON_TEAM_85_BE)
 
 ---
 
@@ -101,11 +109,12 @@ API Docs: https://drr.kro.kr/docs/index.html
   * CQRS 구조 설계
   * 역할 기반 인증
 
-🔗 [https://github.com/config25/Impact-design-back](https://github.com/config25/Impact-design-back)
-API Docs: http://iptdesign.mycafe24.com/docs/index.html
----
+### 🔗 Links
+
+* GitHub: [https://github.com/config25/Impact-design-back](https://github.com/config25/Impact-design-back)
+* API Docs: [http://iptdesign.mycafe24.com/docs/index.html](http://iptdesign.mycafe24.com/docs/index.html)
 
 
 
 
-
+까지 같이 만들어줄게 😎
