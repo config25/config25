@@ -1,10 +1,3 @@
-<p align="center">
-  📧 yhkim052556@gmail.com &nbsp; | &nbsp;
-  <a href="https://github.com/wantcodingwell">GitHub</a> &nbsp; | &nbsp;
-  <a href="https://velog.io/@yhkim0525/posts">Blog</a>
-</p>
-
-
 ## 📊 Stats
 
 <p align="center">
