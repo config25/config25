@@ -12,6 +12,13 @@
   <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yhkim0525" height="150"/>
 </p>
 
+  ## 🌐 Open Source Contributions
+
+  ### spring-projects/spring-batch
+
+  | Issue | Description | Related PR |
+  |-------|-------------|------------|
+  | [#5366](https://github.com/spring-projects/spring-batch/issues/5366) | `ExitStatus#setExitException` breaks immutability contract | [#5367](https://github.com/spring-projects/spring-batch/pull/5367) |
 
 ## 🧰 Tech Stack
 
