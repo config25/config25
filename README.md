@@ -88,7 +88,8 @@
   - 비동기 처리 최적화
  
 🔗 .[GitHub](https://github.com/9ITHON/9-RoomGenie-BE)
-🔗 .[API Docs](http://iptdesign.mycafe24.com/docs/index.html)
+🔗 .[API Docs](https://github.com/user-attachments/files/26428238/index.2.html)
+
 </details>
 
 <details>
