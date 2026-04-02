@@ -87,8 +87,8 @@
   - DIP 기반 구조 설계  
   - 비동기 처리 최적화
  
-🔗 .[GitHub](https://github.com/9ITHON/9-RoomGenie-BE/tree/ci/1).
-
+🔗 .[GitHub](https://github.com/9ITHON/9-RoomGenie-BE)
+🔗 .[API Docs](http://iptdesign.mycafe24.com/docs/index.html)
 </details>
 
 <details>
