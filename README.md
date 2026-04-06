@@ -132,5 +132,5 @@
 
   ## 📫 Contact
 
-  [![Blog](https://img.shields.io/badge/Blog-grey?style=flat-square)](https://your-blog-url)
+  [![Blog](https://img.shields.io/badge/Blog-grey?style=flat-square)](https://velog.io/@yhkim0525/posts)
   [![Email](https://img.shields.io/badge/Email-yhkim052556@gmail.com-blue?style=flat-square)](mailto:yhkim052556@gmail.com)
