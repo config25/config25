@@ -24,6 +24,12 @@
   |-------|-------------|------------|
   | [#5366](https://github.com/spring-projects/spring-batch/issues/5366) | `ExitStatus#setExitException` breaks immutability contract | [#5367](https://github.com/spring-projects/spring-batch/pull/5367) |
 
+  ### spring-projects/spring-restdocs                                                                                                                                                                                            
+                                                                                                                                                                                                                              
+  | Issue | Description | Related PR |                                                                                                                                                                                           
+  |-------|-------------|------------|                                                                                                                                                                                           
+  | [#1033](https://github.com/spring-projects/spring-restdocs/issues/1033) | `MockMvcRequestConverter` uses US_ASCII for URL decoding while encoding uses UTF-8 | [#1034](https://github.com/spring-projects/spring-restdocs/pull/1034) |      
+
   ## 🧰 Tech Stack
 
   <p>
