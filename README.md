@@ -1,10 +1,10 @@
-  # Backend Developer
-                                                                                                                                                                                                                                    
-  <p align="center">
+# Backend Developer                                      
+                                                                                          
+  <p align="center">                                                                                                                                                                                                                
     <b>저사양 환경에서의 성능 최적화부터 확장성 있는 구조까지, 동작하는 코드 너머의 문제를 해결하는 백엔드 개발자입니다.</b>                                                                                                        
-  </p>            
-
-  ## 👋 About Me
+  </p>                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                    
+  ## 👋 About Me  
 
   1GB 메모리 서버에서 JVM 튜닝을 해본 경험부터, 멀티모듈 구조 설계와 AI 파이프라인 연동까지 — "동작하는 코드" 너머의 문제를 고민합니다.
   실서비스 결제 모듈에서 멱등성·분산 락·DLQ 같은 방어로직을 다뤘고, Spring 생태계 기반 백엔드 개발과 클라우드 인프라에 관심이 많습니다.
@@ -24,11 +24,11 @@
   |-------|-------------|------------|
   | [#5366](https://github.com/spring-projects/spring-batch/issues/5366) | `ExitStatus#setExitException` breaks immutability contract | [#5367](https://github.com/spring-projects/spring-batch/pull/5367) |
 
-  ### spring-projects/spring-restdocs                                                                                                                                                                                            
-                                                                                                                                                                                                                              
-  | Issue | Description | Related PR |                                                                                                                                                                                           
-  |-------|-------------|------------|                                                                                                                                                                                           
-  | [#1033](https://github.com/spring-projects/spring-restdocs/issues/1033) | `MockMvcRequestConverter` uses US_ASCII for URL decoding while encoding uses UTF-8 | [#1034](https://github.com/spring-projects/spring-restdocs/pull/1034) |      
+  ### spring-projects/spring-restdocs
+
+  | Issue | Description | Related PR |
+  |-------|-------------|------------|
+  | [#1033](https://github.com/spring-projects/spring-restdocs/issues/1033) | `MockMvcRequestConverter` uses US_ASCII for URL decoding while encoding uses UTF-8 |[#1034](https://github.com/spring-projects/spring-restdocs/pull/1034) |
 
   ## 🧰 Tech Stack
 
@@ -51,7 +51,7 @@
   ## 🏆 Achievements
 
   * 📱 **드르륵 (drr)** — iOS App Store 정식 출시 (2025)
-  * 🥈 2025 한양대 캡스톤 디자인 **우수상**  — Drr
+  * 🥈 2025 한양대 캡스톤 디자인 **우수상** — Drr
   * 🥈 2025 9ITHON **우수상 (2위)** — RoomGenie
   * 🥇 2023 전국 대학생 SW창업 아이디어톤 **결선 진출**
 
@@ -59,7 +59,7 @@
 
   * 🏢 **(주)퀀텀에듀솔루션 현장실습** (2025.09 ~ 2026.02)
     - **Impact Design Canvas** 풀스택 단독 개발 — Spring Boot · MariaDB · OpenAI
-    - **Unicast (https://unicast.kr) 구독 결제 모듈** — PayPal + NHN KCP 연동
+    - **Unicast (https://unicast.kr) 구독 결제 모듈** — PayPal + 토스페이먼츠 연동
       - 방어로직: 멱등성 / 이중결제 방지 / 분산 락 / DLQ / 상태전이 검증 / 웹훅 중복방지
       - GitHub Actions 기반 CI/CD 파이프라인 구축, PG사 결제모듈 심사 대응
     - **CX-INNOVATOR** 디자인 씽킹 플랫폼 유지보수 — http://www.abl-cxinno.kr/main
@@ -70,41 +70,46 @@
   * 🌱 **구름톤 유니브 4기 백엔드** (2025.03 ~ 2025.09)
     - 백엔드 B팀 스터디장
     - 경기북부 해커톤 9ITHON, 구름톤 시즌톤 참여
+    - 2025 9ITHON 2위(우수상)
 
   ## 🚀 Projects
 
-<details>                                                                                                                                                                                                                        
-  <summary>💳 Unicast 결제 모듈 — PayPal 보강 + KCP 신규 연동 + PG 심사 대응 (운영 중) 🔥</summary>                                                                                                                                
-                                                                                                                                                                                                                                   
-  > 영상 자막 추출·번역·더빙 디지털 콘텐츠 서비스의 **결제 모듈 단독 유지보수** 및 방어로직 보강                                                                                                                                   
-                                                                                                                                                                                                                                   
-  - **Role**: 기존 운영 서비스의 **결제 모듈 단독 유지보수 및 방어로직 보강** (현장실습)                                                                                                                                           
-  - **Scope**: PayPal/KCP 결제 흐름, 웹훅 처리, 정기결제 스케줄러, PG 심사 대응 (서비스 본체 기능은 범위 외), paypal의 경우 국내결제가 안되서 추후 추가예정
-  - **Tech**: Spring Boot · Next.js · MongoDB · Redis(분산 락) · NHN KCP · Webhook · DLQ · State Machine · GitHub Actions · Docker
-  - **Service**: https://unicast.kr (운영 중) 
+  <details>
+  <summary>💳 Unicast 결제 모듈 — PayPal 보강 + 토스페이먼츠 연동 + PG 심사 대응 (운영 중) 🔥</summary>
+
+  > 영상 자막 추출·번역·더빙 디지털 콘텐츠 서비스의 **결제 모듈 단독 유지보수** 및 방어로직 보강
+
+  - **Role**: 기존 운영 서비스의 **결제 모듈 단독 유지보수 및 방어로직 보강** (현장실습)
+  - **Scope**: PayPal/토스페이먼츠 결제 흐름, 웹훅 처리, 정기결제 스케줄러, PG 심사 대응 (서비스 본체 기능은 범위 외)
+  - **Tech**: Spring Boot · Next.js · MongoDB(분산 락) · 토스페이먼츠 · PayPal · Webhook · DLQ · State Machine · GitHub Actions · Docker
+  - **Service**: https://unicast.kr (운영 중)
 
   **Key Work**
-  - **KCP 정기결제 신규 연동** — 배치키 발급 → 스케줄러 자동결제 → 구독 취소/배치키 삭제까지 프론트+백엔드 전체 흐름 구현
+  - **NHN KCP 정기결제 신규 연동 → PG 정책 이슈로 토스페이먼츠 전환** — 초기에는 NHN KCP로 정기결제(배치키 발급 → 스케줄러 자동결제 → 구독 취소/배치키 삭제) 프론트+백엔드 전 구간을 구현했으나, **NHN KCP 측에서 "정기과금(구독)
+  상품은 계약 검토 불가, 단건결제로만 계약 가능"**이라는 정책 회신을 받아 **토스페이먼츠로 이관**. 기존 KCP 방어로직(멱등성/DLQ/분산 락/상태 전이 검증)을 Toss 흐름에 맞춰 재구현하면서 `Provider 락`·`빌링키 발급+첫결제
+  원자성`·`사후조회 기반 네트워크 복구` 등 안정성 장치를 한 단계 강화.
   - **결제 방어로직 강화** — 운영 중 발견된 race condition / 누락 케이스에 대해 멱등성·분산 락·DLQ·상태 전이 검증 도입
-  - **PG사 가맹 심사 대응** — NHN KCP 심사 통과를 위한 결제 플로우 보완, 약관/환불규정/통신판매업번호 등록
+  - **PG사 가맹 심사 대응** — 토스페이먼츠 심사 통과를 위한 결제 플로우 보완, 약관/환불규정/통신판매업번호 등록
   - **CI/CD 파이프라인 신규 구축** — GitHub Actions 기반 자동 빌드·배포
 
-  
+
   **Troubleshooting**
 
-  - **KCP 배치키 발급 ↔ 첫 결제 사이 공백 제거** (`d7e9637`, `f9fedff`)
-    : KCP 정기결제 초기 구현은 "배치키 발급 → 다음 스케줄러 주기에 첫 결제 실행" 구조였음. 가입 직후 결제가 즉시 일어나지 않아 **사용자가 유료 기능을 못 쓰고 결제 누락처럼 보이는 UX 문제** 발생.
-    → 배치키 발급 트랜잭션 직후 **첫 결제를 즉시 동기 실행**하고, 스케줄러 다운/배포 누락 등으로 빠진 결제는 `nextBillingDate` 기준 **밀린 결제 복구 잡**으로 별도 보강.
+  - **배치키/빌링키 발급 ↔ 첫 결제 사이 공백 제거** (`d7e9637`, `f9fedff`)
+    : 정기결제 초기 구현은 "빌링키 발급 → 다음 스케줄러 주기에 첫 결제 실행" 구조였음. 가입 직후 결제가 즉시 일어나지 않아 **사용자가 유료 기능을 못 쓰고 결제 누락처럼 보이는 UX 문제** 발생.
+    → 빌링키 발급 트랜잭션 직후 **첫 결제를 즉시 동기 실행**하고, 스케줄러 다운/배포 누락 등으로 빠진 결제는 `nextBillingDate` 기준 **밀린 결제 복구 잡**으로 별도 보강. (토스 이관 후에도 동일 패턴 유지 — 빌링키 발급 API와 첫
+  결제 호출을 한 트랜잭션 흐름으로 묶어 memento 패턴으로 원자성 확보)
 
   - **결제 요청 멱등성 + 스케줄러 분산 락 + DLQ 도입** (`0ec22b4`)
-    : ① 사용자가 결제 버튼을 빠르게 두 번 누르거나 네트워크 재시도가 발생하면 동일 요청이 두 번 처리되어 **이중 결제** 위험. ② 정기결제 스케줄러는 다중 인스턴스 환경에서 같은 시각에 동시에 돌면 **모든 사용자에게 중복 청구**될
-  수 있음. ③ webhook 처리가 일시 실패하면 그대로 유실됨.
+    : ① 사용자가 결제 버튼을 빠르게 두 번 누르거나 네트워크 재시도가 발생하면 동일 요청이 두 번 처리되어 **이중 결제** 위험. ② 정기결제 스케줄러는 다중 인스턴스 환경에서 같은 시각에 동시에 돌면 **모든 사용자에게 중복 청구**될 수
+   있음. ③ webhook 처리가 일시 실패하면 그대로 유실됨.
     → ① `IdempotencyKey` 컬렉션에 `(memberId + operation)` 키를 **MongoDB 유니크 인덱스**로 강제하고 24h TTL로 자동 정리, ② `SchedulerLock` 컬렉션의 `_id` unique 제약을 활용한 **MongoDB 기반 분산 락**으로 정기결제 스케줄러 중복
-   실행 차단(10분 TTL 안전장치 포함), ③ webhook 처리 실패 메시지는 `PaymentDeadLetter`로 격리 후 **재시도 스케줄러**에서 자동 재처리 + 운영자 수동 개입 가능.
+  실행 차단(30분 TTL 안전장치 포함), ③ webhook 처리 실패 메시지는 `PaymentDeadLetter`로 격리 후 **재시도 스케줄러**에서 자동 재처리 + 운영자 수동 개입 가능.
 
   - **구독 상태 전이 검증 — 비정상 전이 차단** (`0ec22b4`)
     : webhook 순서 역전이나 운영자 수동 개입 시 `CANCELLED → ACTIVE`처럼 비정상 상태 전이가 발생할 수 있는 구조였음.
-    → `SubscriptionStatus` enum에 **허용 전이 규칙**(`PENDING → ACTIVE/CANCELLED`, `ACTIVE → CANCELLED/SUSPENDED/PENDING` 등)을 코드 레벨로 정의하고, `canTransitionTo()` 검증을 거치지 않은 상태 변경은 도메인 예외로 차단.
+    → `SubscriptionStatus` enum에 **허용 전이 규칙**(`PENDING → ACTIVE/CANCELLED`, `ACTIVE → CANCELLED/SUSPENDED/PENDING`, `CANCELLED → ACTIVE/PENDING`, `SUSPENDED → ACTIVE/CANCELLED`)을 코드 레벨로 정의하고, `canTransitionTo()`
+   검증을 거치지 않은 상태 변경은 도메인 예외로 차단.
 
   - **FREE 크레딧 일괄 배치 → 사용자별 개별 주기 전환** (`30cb3d8`)
     : 모든 FREE 사용자의 크레딧을 매월 1일(`cron 0 0 3 1 * *`) 일괄 지급하던 기존 구조는 ① 1일에 부하가 몰리고, ② **월 중간 가입자가 한 달치 크레딧을 기다려야 하는** 형평성 문제가 있었음.
@@ -112,12 +117,12 @@
 
   - **`LocalDate.now()` 타임존 누락으로 결제일 어긋남** (`d7e9637`)
     : 결제일/구독 만료일에 `LocalDate.now()`를 사용했는데 서버 컨테이너가 UTC 기준이라 **KST 자정 직후 결제가 전날로 인식**되는 케이스 발생. 타임존 불일치로 `nextBillingDate` 계산이 하루씩 어긋남.
-    → 모든 `LocalDate.now()` 호출을 `LocalDate.now(ZoneId.of("Asia/Seoul"))`로 명시 변경, 결제일 계산을 KST 기준으로 일관되게 통일.계정 발급
-  - 심사 통과 후 실서비스 오픈
+    → 1차로 모든 `LocalDate.now()` 호출을 `LocalDate.now(ZoneId.of("Asia/Seoul"))`로 명시 변경. 이후 근본 대응으로 `BaseDocument`·DTO·Service 전반의 날짜 필드를 **`ZonedDateTime(Asia/Seoul)`로 일괄 전환**하여 타임존 누수를
+  구조적으로 제거.
 
+  - **토스페이먼츠 심사 통과 후 실서비스 오픈**
 
-
-  🔗 [Unicast](https://unicast.kr)
+  🔗 [Unicast](https://unicast.kr) · [API Docs](https://api.unicast.kr/swagger-ui/index.html#/) · [Github](https://github.com/config25/v2)
 
   </details>
 
