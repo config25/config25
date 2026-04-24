@@ -223,7 +223,7 @@
   - **Private S3 ↔ GPT-4 Vision 연동 불가** : 비공개 버킷이라 OpenAI가 이미지 URL을 직접 fetch 할 수 없는 문제 → S3에서 다운로드 후 **Base64 data URL** 로 변환해 전달, 보안과 AI 호출을 모두 만족
   - **OpenAI 429 장애 격리** : `HttpClientErrorException.TooManyRequests` 를 별도 캐치하여 `AI_RATE_LIMIT_EXCEEDED` **도메인 예외로 래핑**, 사용자에게 명확한 재시도 메시지 노출
 
-  🔗 [GitHub](https://github.com/9ITHON/9-RoomGenie-BE)
+  🔗 [GitHub](https://github.com/9ITHON/9-RoomGenie-BE) · [API Docs](https://github.com/config25/config25)
 
   </details>
 
