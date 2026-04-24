@@ -193,7 +193,7 @@
   - **이미지 트래픽 절감 (`42ded85`)**
     : 채팅 첨부 이미지 원본 그대로 NCP 업로드 → 대역폭/모바일 데이터 부담 → Scrimage 기반 **WebP 변환 파이프라인** 도입, 업로드 단계에서 손실 압축 적용.
 
-  🔗 [GitHub](https://github.com/Chewing-Chat) · [API Docs](https://drr.kro.kr/docs/index.html) · [App Store](https://apps.apple.com/kr/app/%EB%93%9C%EB%A5%B4%EB%A5%B5-drr/id6742639598)
+  🔗 [GitHub](https://github.com/Chewing-Chat) · [API Docs](https://config25.github.io/config25/drr.html) · [App Store](https://apps.apple.com/kr/app/%EB%93%9C%EB%A5%B4%EB%A5%B5-drr/id6742639598)
 
   </details>
 
@@ -223,7 +223,7 @@
   - **Private S3 ↔ GPT-4 Vision 연동 불가** : 비공개 버킷이라 OpenAI가 이미지 URL을 직접 fetch 할 수 없는 문제 → S3에서 다운로드 후 **Base64 data URL** 로 변환해 전달, 보안과 AI 호출을 모두 만족
   - **OpenAI 429 장애 격리** : `HttpClientErrorException.TooManyRequests` 를 별도 캐치하여 `AI_RATE_LIMIT_EXCEEDED` **도메인 예외로 래핑**, 사용자에게 명확한 재시도 메시지 노출
 
-  🔗 [GitHub](https://github.com/9ITHON/9-RoomGenie-BE) · [API Docs](https://github.com/config25/config25)
+  🔗 [GitHub](https://github.com/9ITHON/9-RoomGenie-BE) · [API Docs](https://config25.github.io/config25/)
 
   </details>
 
