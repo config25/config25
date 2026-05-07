@@ -13,7 +13,6 @@
 
   <p align="center">
     <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=config25&show_icons=true"/>
-    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yhkim0525" height="150"/>
   </p>
 
   ## 🌐 Open Source Contributions
