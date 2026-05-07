@@ -29,6 +29,8 @@
   | Issue | Description | Related PR |
   |-------|-------------|------------|
   | [#1033](https://github.com/spring-projects/spring-restdocs/issues/1033) | `MockMvcRequestConverter` uses US_ASCII for URL decoding while encoding uses UTF-8 |[#1034](https://github.com/spring-projects/spring-restdocs/pull/1034) |
+  | [#1038](https://github.com/spring-projects/spring-restdocs/issues/1038) | `WebTestClientRequestConverter` mishandles cookies whose value contains `=` | [#1040](https://github.com/spring-projects/spring-restdocs/pull/1040) |
+  | [#1039](https://github.com/spring-projects/spring-restdocs/issues/1039) | `UriModifyingContentModifier.modifyContent` decodes with the request charset but re-encodes with the platform default |[#1043](https://github.com/spring-projects/spring-restdocs/pull/1043) |
 
   ## 🧰 Tech Stack
 
