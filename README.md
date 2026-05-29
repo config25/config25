@@ -10,12 +10,6 @@
   - **저사양 서버 튜닝** — 1코어/1GB 환경에서 HikariCP·Tomcat·ioExecutor 튜닝 + `CallerRunsPolicy` 백프레셔로 OOM 방어
   - **멀티모듈 + DIP 설계** — domain이 인터페이스에만 의존하도록 분리, JPA Entity ↔ 도메인 POJO 매핑으로 LLM/스토리지 교체 가능한 구조 반복 적용
 
-  ## 📊 Stats
-
-  <p align="center">
-    <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=config25&show_icons=true"/>
-  </p>
-
   ## 🌐 Open Source Contributions
 
   ### spring-projects/spring-batch
@@ -37,6 +31,7 @@
   | Issue | Description | Related PR |
   |-------|-------------|------------|
   | [#4242](https://github.com/spring-projects/spring-data-jpa/issues/4242) | `QueryUtils.FUNCTION_PATTERN` fails to detect `COUNT(*) AS alias`, causing invalid `ORDER BY` alias rewriting in native queries |[#4249](https://github.com/spring-projects/spring-data-jpa/pull/4249) |
+
 
   ## 📊 Stats
 
@@ -107,30 +102,69 @@
   - **PG사 가맹 심사 대응** — 결제 플로우 보완, 약관/환불규정/통신판매업번호 등록
   - **CI/CD 파이프라인 신규 구축** — GitHub Actions 기반 자동 빌드·배포
 
-  **Troubleshooting**
+### Troubleshooting
 
-  - **배치키/빌링키 발급 ↔ 첫 결제 사이 공백 제거** (`d7e9637`, `f9fedff`)
-    : 정기결제 초기 구현은 "빌링키 발급 → 다음 스케줄러 주기에 첫 결제 실행" 구조. 가입 직후 결제가 즉시 일어나지 않아 **사용자가 유료 기능을 못 쓰고 결제 누락처럼 보이는 UX 문제** 발생.
-    → 빌링키 발급 트랜잭션 직후 **첫 결제를 즉시 동기 실행**하고, 스케줄러 다운/배포 누락 등으로 빠진 결제는 `nextBillingDate` 기준 **밀린 결제 복구 잡**으로 보강. PG 이관 후에도 동일 패턴 유지 — 빌링키 발급 API와 첫 결제 호출을
-   한 트랜잭션 흐름으로 묶어 memento 패턴으로 원자성 확보.
+#### 1. 빌링키 발급 ↔ 첫 결제 원자성 확보 (`d7e9637`, `f9fedff`)
 
-  - **결제 요청 멱등성 + 스케줄러 분산 락 + DLQ 도입** (`0ec22b4`)
-    : ① 결제 버튼 더블 클릭/네트워크 재시도로 인한 **이중 결제** 위험, ② 정기결제 스케줄러가 다중 인스턴스에서 동시 실행되면 **모든 사용자에게 중복 청구**될 수 있음, ③ webhook 처리 일시 실패가 그대로 유실.
-    → ① `IdempotencyKey` 컬렉션의 `(memberId + operation)` 키를 **MongoDB 유니크 인덱스**로 강제 + 24h TTL 자동 정리, ② `SchedulerLock` 컬렉션의 `_id` unique 제약을 활용한 **MongoDB 기반 분산 락**으로 중복 실행 차단(30분 TTL
-  안전장치), ③ webhook 실패 메시지는 `PaymentDeadLetter`로 격리 후 **재시도 스케줄러**에서 자동 재처리 + 운영자 수동 개입 가능.
+* **문제**
 
-  - **구독 상태 전이 검증 — 비정상 전이 차단** (`0ec22b4`)
-    : webhook 순서 역전이나 운영자 수동 개입 시 `CANCELLED → ACTIVE`처럼 비정상 상태 전이 발생 가능한 구조.
-    → `SubscriptionStatus` enum에 **허용 전이 규칙**(`PENDING → ACTIVE/CANCELLED`, `ACTIVE → CANCELLED/SUSPENDED/PENDING` 등)을 코드 레벨로 정의하고, `canTransitionTo()` 검증을 거치지 않은 상태 변경은 도메인 예외로 차단.
+  * 초기 구조는 "빌링키 발급 → 다음 스케줄러 주기에 첫 결제" 방식이라 가입 직후 유료 기능 사용이 불가능했고, 결제 누락처럼 보이는 UX 문제가 존재
 
-  - **FREE 크레딧 일괄 배치 → 사용자별 개별 주기 전환** (`30cb3d8`)
-    : 모든 FREE 사용자 크레딧을 매월 1일(`cron 0 0 3 1 * *`) 일괄 지급 → ① 1일 부하 집중, ② **월 중간 가입자가 한 달치를 기다려야 하는** 형평성 문제.
-    → 스케줄러를 매일 실행(`cron 0 0 3 * * *`)으로 바꾸고, `nextBillingDate <= today`인 FREE+ACTIVE 구독만 처리하도록 변경. 사용자별 가입일 기준 개별 주기 전환으로 부하 분산과 UX 동시 개선.
+* **해결**
 
-  - **`LocalDate.now()` 타임존 누락으로 결제일 어긋남** (`d7e9637`)
-    : 서버 컨테이너가 UTC 기준이라 **KST 자정 직후 결제가 전날로 인식**, `nextBillingDate` 계산이 하루씩 어긋남.
-    → 1차로 모든 `LocalDate.now()`를 `LocalDate.now(ZoneId.of("Asia/Seoul"))`로 명시 변경. 이후 근본 대응으로 `BaseDocument`·DTO·Service 전반의 날짜 필드를 **`ZonedDateTime(Asia/Seoul)`로 일괄 전환**하여 타임존 누수를 구조적으로
-   제거.
+  * 빌링키 발급 직후 첫 결제를 동기 실행으로 변경
+  * 발급·결제·검증 단계별 성공 여부를 기록해 실패 시 보상 처리(빌링키 만료 / 자동 취소 / DLQ 적재)
+  * `nextBillingDate <= today` 기반 밀린 결제 복구 잡 추가
+  * UTC 컨테이너 ↔ KST 운영 환경 차이로 청구일이 하루 어긋나던 문제를 `ZoneId.of("Asia/Seoul")` 명시로 해결
+
+* **결과**
+
+  * PG 재이관(KCP → 토스 → NicePay) 이후에도 동일 패턴 재사용 가능
+
+---
+
+#### 2. 결제 동시성 방어 — 멱등성 + 분산 락 + DLQ (`0ec22b4`)
+
+* **문제**
+
+  * 버튼 더블 클릭/재시도로 인한 이중 결제
+  * 다중 인스턴스 스케줄러 동시 실행 시 전체 구독자 중복 청구 가능
+  * webhook 처리 실패 메시지 유실 위험 존재
+
+* **해결**
+
+  * MongoDB unique index + TTL을 공통 primitive로 사용
+  * `IdempotencyKey` : `(memberId + operation)` 유니크 인덱스 + 24h TTL
+  * `SchedulerLock` : `_id` 유니크 제약 기반 분산 락 + 30분 TTL
+  * `PaymentDeadLetter` : 실패 메시지 격리 후 지수 백오프 재시도 및 운영자 수동 개입 지원
+
+* **비고**
+
+  * 멱등성과 DLQ는 단일 인스턴스에서도 필수
+  * 분산 락은 다중 인스턴스 스케일아웃 대비 선제 설계
+
+---
+
+#### 3. 구독 상태 전이 검증 — 상태 머신 가드 도입 (`0ec22b4`)
+
+* **문제**
+
+  * webhook 중복 수신이나 코드/운영 개입으로 인해 비논리적인 상태 전이(CANCELLED → SUSPENDED 등)가 가능
+  * 상태 변경 규칙이 코드 곳곳에 흩어질 위험 존재
+
+* **해결**
+
+  * `SubscriptionStatus` enum에 허용 전이 규칙 정의
+  * 상태 변경은 `transitTo()` 도메인 가드를 반드시 통과하도록 제한(raw setter 제거)
+  * `activate()`는 멱등 처리해 중복 ACTIVATED webhook 흡수
+
+* **결과**
+
+  * 상태 전이 규칙을 도메인 내부로 캡슐화해 비정상 상태 조합 차단
+  * webhook/운영/서비스 코드 등 어떤 입력 경로에서도 동일 규칙 강제 가능
+
+
+  ---
 
   🔗 [Unicast](https://unicast.kr) · [API Docs](https://api.unicast.kr/swagger-ui/index.html#/) · [GitHub](https://github.com/config25/v2)
 
