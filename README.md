@@ -17,6 +17,7 @@
   | Issue | Description | Related PR |
   |-------|-------------|------------|
   | [#5366](https://github.com/spring-projects/spring-batch/issues/5366) | `ExitStatus#setExitException` breaks immutability contract | [#5367](https://github.com/spring-projects/spring-batch/pull/5367) |
+  | [#5385](https://github.com/spring-projects/spring-batch/issues/5385) | `MongoStepExecutionDao#getLastStepExecution` filters and sorts all step executions in memory instead of pushing the filter/sort/limit down to MongoDB |[#5405](https://github.com/spring-projects/spring-batch/pull/5405) |
 
   ### spring-projects/spring-restdocs
 
